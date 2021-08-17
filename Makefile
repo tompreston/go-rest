@@ -1,3 +1,11 @@
+OUTPUT = sysinfo_server
+
+build:
+	go build -o sysinfo_server
+
+clean:
+	rm $(OUTPUT)
+
 deploy:
 	go run .
 
