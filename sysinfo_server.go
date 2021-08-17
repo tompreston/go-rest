@@ -68,7 +68,6 @@ func handleDuration(w http.ResponseWriter, r *http.Request) {
 
 	if !strings.Contains(line, " = ") {
 		writeError(w, errors.New(fmt.Sprintf("expected '=' in string '%v'", line)))
-
 	}
 
 	total := strings.Split(line, " = ")[1]
